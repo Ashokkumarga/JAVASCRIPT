@@ -101,13 +101,14 @@ let users = [{ "id": 1, "name": "Christean", "email": "cbullar0@instagram.com", 
 
 
 function display_Data() {
-   let rows= " ";
-    for(user of users){ 
-      rows+=`<tr>
-                 <td>${user.id}</td>
-                 <td>${user.name}</td>
-                 <td>${user.email}</td>
-                 <td>${user.email.slice(0,"@"+1)}</td>
+   let rows= "";
+    for(use of users){ 
+      rows+= `<tr>
+                 <td>${use.id}</td>
+                 <td>${use.name}</td>
+                 <td>${use.email}</td>
+                 <td>${use.gender}</td>
+                 <td>${use.email.slice(use.email.indexOf("@")+1,use.email.indexOf("."))}</td>
               </tr>`
   }
   document.getElementById('tableo').innerHTML =rows;
