@@ -13,10 +13,12 @@ class Account{
 
     }
     get_Bal(){
-        return this.Amount+= this.min_bal
+        return this.Amount = this.Amount-this.min_bal
     }
 
 }
 
-let a1= new Account();
-console.log(a1.get_Bal)
+let a1= new Account(280,"Ashok",500000);
+console.log(a1.get_Bal());
+console.log(a1.Name);
+console.log(a1.deposit_Amount())
