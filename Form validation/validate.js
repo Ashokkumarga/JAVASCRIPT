@@ -9,6 +9,9 @@ function validate_Form() {
     else
         if (name.length < 5) {
             document.getElementById('userMessage').innerHTML = "User Name Min 5 Char "
+            return false
         }
-    return false
+    
 }
+
+
