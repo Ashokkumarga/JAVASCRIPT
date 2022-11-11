@@ -20,6 +20,21 @@
 // console.log(A.slice(0,1))
 
 
-var A=["AK","BC","MP","BV","T"]
+// var A=["AK","BC","MP","BV","T"]
 
-console.log(A.slice(2,3))
+// alert (A.slice(2,3))
+
+
+
+// var name =prompt("what is your name?");
+
+// alert("Hello " + name)
+
+
+// var cost = 3+5*2;
+// console.log(cost)
+
+
+var dogAge =prompt("How old Your Dog age")
+var humanAge = ((dogAge-2)*4)+21;
+alert("Your dog is " + humanAge  + "in Human Age")
