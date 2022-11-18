@@ -143,19 +143,45 @@ const myArray = [];
 
 
 
-function multiplyAll(arr) {
-  let product = 1;
-  let arri=0;
-  // Only change code below this line
-for(let i=0;i<arr.length;i++){
-  for(let j=0;j<arr.length;j++){
-     arri*=arr[i];
-     console.log(aari)
+// function multiplyAll(arr) {
+//   let product = 1;
+//   let arri=0;
+//   // Only change code below this line
+// for(let i=0;i<arr.length;i++){
+//   for(let j=0;j<arr.length;j++){
+//      arri*=arr[i];
+//      console.log(aari)
+//   }
+// }
+//   // Only change code above this line
+//   return product;
+// }
+
+// multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+// // console.log(multiplyAll())
+
+
+
+
+function countdown(n){
+  if(n<1){
+    return [];
+  }else{
+    const countArray=countdown(n-1);
+    countArray.push(n-1);
+    countArray.unshift(n);
+    return countArray;
+  }
+  
+}
+console.log(countdown(10))
+
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.unshift(n);
+    return arr;
   }
 }
-  // Only change code above this line
-  return product;
-}
-
-multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
-// console.log(multiplyAll())
