@@ -163,25 +163,38 @@ const myArray = [];
 
 
 
-function countdown(n){
-  if(n<1){
-    return [];
-  }else{
-    const countArray=countdown(n-1);
-    countArray.push(n-1);
-    countArray.unshift(n);
-    return countArray;
-  }
+// function countdown(n){
+//   if(n<1){
+//     return [];
+//   }else{
+//     const countArray=countdown(n-1);
+//     countArray.push(n-1);
+//     countArray.unshift(n);
+//     return countArray;
+//   }
   
-}
-console.log(countdown(10))
+// }
+// console.log(countdown(10))
 
-function countdown(n) {
-  if (n < 1) {
-    return [];
-  } else {
-    const arr = countdown(n - 1);
-    arr.unshift(n);
-    return arr;
-  }
+// function countdown(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const arr = countdown(n - 1);
+//     arr.unshift(n);
+//     return arr;
+//   }
+// }
+
+
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+     return s.reverse();
+  // Using s = [2, 5, 7] would be invalid
+
+  // Only change code above this line
 }
+editInPlace(s);
+console.log(s);
+console.log(editInPlace());
